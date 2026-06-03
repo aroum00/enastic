@@ -1,0 +1,423 @@
+/* ===== RESET & BASE ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #333;
+    background-color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* ===== HEADER ===== */
+header {
+    padding: 10px 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+header img {
+    height: 60px;
+}
+
+header p {
+    font-style: italic;
+    color: #555;
+    font-size: 13px;
+    margin-top: 4px;
+}
+
+/* ===== BANNIERE ===== */
+#banniere {
+    width: 100%;
+}
+
+#banniere img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+/* ===== NAV ===== */
+nav {
+    background-color: #e8e8e8;
+    padding: 8px 20px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+nav ul li a {
+    color: #333;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+nav ul li a:hover {
+    color: #e07b00;
+}
+
+/* ===== SECTION PRINCIPALE ===== */
+section {
+    padding: 20px;
+    overflow: hidden;
+}
+
+article {
+    float: left;
+    width: 70%;
+}
+
+aside {
+    float: right;
+    width: 28%;
+    background-color: #f5f5f5;
+    padding: 12px;
+    border: 1px solid #ddd;
+    font-size: 13px;
+}
+
+aside h3 {
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+aside p {
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
+aside img {
+    max-width: 100%;
+    margin-bottom: 8px;
+}
+
+/* Clearfix pour section */
+section::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+article h1 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: #222;
+}
+
+article h2 {
+    font-size: 18px;
+    margin-top: 16px;
+    margin-bottom: 8px;
+    color: #222;
+}
+
+article h3 {
+    font-size: 15px;
+    margin-top: 12px;
+    margin-bottom: 6px;
+}
+
+article p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+article ul {
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+article ul li {
+    margin-bottom: 5px;
+    line-height: 1.5;
+}
+
+article ol {
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+article ol li {
+    margin-bottom: 8px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* Image dans article (index) */
+.img-directeur {
+    float: left;
+    margin-right: 12px;
+    margin-bottom: 8px;
+    width: 100px;
+}
+
+/* ===== TABLE (formations) ===== */
+table {
+    border-collapse: collapse;
+    margin: 12px auto;
+}
+
+table th, table td {
+    border: 1px solid #999;
+    padding: 6px 14px;
+    text-align: center;
+    font-size: 13px;
+}
+
+table th {
+    background-color: #ddd;
+    font-weight: bold;
+}
+
+/* ===== CONTACT PAGE ===== */
+.contact-wrapper {
+    display: flex;
+    gap: 40px;
+    padding: 20px;
+}
+
+.contact-info {
+    flex: 1;
+}
+
+.contact-info h2 {
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.contact-info p {
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+
+.contact-form {
+    flex: 1;
+}
+
+.contact-form h2 {
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    display: block;
+    width: 200px;
+    margin-bottom: 6px;
+    padding: 5px;
+    border: 1px solid #aaa;
+    font-size: 13px;
+}
+
+.contact-form textarea {
+    height: 80px;
+    resize: vertical;
+}
+
+.contact-form button {
+    padding: 5px 14px;
+    font-size: 13px;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    border: 1px solid #aaa;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background-color: #f0f0f0;
+    border-top: 2px solid #ccc;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.footer-block {
+    float: left;
+    width: 25%;
+    padding-right: 16px;
+}
+
+footer::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.footer-block:first-child img {
+    height: 40px;
+    margin-bottom: 6px;
+}
+
+.footer-block p {
+    color: #c05000;
+    margin-bottom: 5px;
+    font-size: 13px;
+}
+
+.footer-block h3 {
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #333;
+    text-transform: uppercase;
+}
+
+.footer-block ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-block ul li {
+    margin-bottom: 4px;
+}
+
+.footer-block ul li a {
+    color: #c05000;
+    font-size: 13px;
+}
+
+.footer-block ul li a:hover {
+    text-decoration: underline;
+}
+
+/* ===== RESPONSIVE ===== */
+
+/* Tablette : <= 768px */
+@media (max-width: 768px) {
+
+    /* Header */
+    header img {
+        height: 50px;
+    }
+
+    /* Bannière moins haute */
+    #banniere img {
+        height: 140px;
+    }
+
+    /* Nav : liens sur plusieurs lignes */
+    nav ul li {
+        display: inline-block;
+        margin-right: 14px;
+        margin-bottom: 4px;
+    }
+
+    /* Article et aside : empilés */
+    article {
+        float: none;
+        width: 100%;
+    }
+
+    aside {
+        float: none;
+        width: 100%;
+        margin-top: 16px;
+    }
+
+    /* Footer : 2 blocs par ligne */
+    .footer-block {
+        width: 50%;
+        margin-bottom: 16px;
+    }
+
+    /* Contact : empilé */
+    .contact-wrapper {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%;
+    }
+
+    /* Table scrollable */
+    article {
+        overflow-x: auto;
+    }
+
+    table {
+        width: 100%;
+        font-size: 12px;
+    }
+
+    table th, table td {
+        padding: 5px 8px;
+    }
+}
+
+/* Mobile : <= 480px */
+@media (max-width: 480px) {
+
+    body {
+        font-size: 13px;
+    }
+
+    header {
+        padding: 8px 12px;
+    }
+
+    header img {
+        height: 40px;
+    }
+
+    /* Nav : chaque lien sur sa propre ligne */
+    nav {
+        padding: 6px 12px;
+    }
+
+    nav ul li {
+        display: block;
+        margin-right: 0;
+        margin-bottom: 6px;
+    }
+
+    /* Bannière plus petite */
+    #banniere img {
+        height: 100px;
+    }
+
+    /* Section */
+    section {
+        padding: 12px;
+    }
+
+    /* Image directeur prend moins de place */
+    .img-directeur {
+        width: 70px;
+    }
+
+    /* Footer : 1 bloc par ligne */
+    .footer-block {
+        width: 100%;
+        margin-bottom: 14px;
+    }
+
+    /* Titres */
+    article h1 {
+        font-size: 17px;
+    }
+
+    article h2 {
+        font-size: 15px;
+    }
+}
